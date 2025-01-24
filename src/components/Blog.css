@@ -1,0 +1,45 @@
+.blog-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  .blog {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+    height: 300px; /* Increased height */
+  }
+  
+  .blog-odd {
+    flex-direction: row-reverse;
+  }
+  
+  .blog-image {
+    width: 40%;
+    border-radius: 10px;
+    height: 100%; /* Adjusted to match increased blog height */
+    object-fit: cover; /* Ensures image fits the space nicely */
+  }
+  
+  .blog-content {
+    width: 55%;
+    text-align: left;
+  }
+  
+  .blog-title {
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .blog-description {
+    font-size: 1em;
+    color: #555;
+  }
+  

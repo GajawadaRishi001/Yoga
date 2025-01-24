@@ -1,0 +1,106 @@
+/* Main Section Styling */
+.carousel-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  gap: 20px;
+}
+
+/* Left-Aligned Carousel */
+.carousel-container {
+  flex: 1;
+  max-width: 60%; /* Occupy 60% of the width */
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.carousel-image {
+  width: 100%;
+  height: 400px;
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 2rem;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 10px 15px;
+  border: none;
+  cursor: pointer;
+  z-index: 2;
+  border-radius: 50%;
+  user-select: none;
+  transition: background-color 0.3s ease;
+}
+
+.carousel-button.left {
+  left: 20px;
+}
+
+.carousel-button.right {
+  right: 20px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-dots {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  bottom: 15px;
+  width: 100%;
+  gap: 10px;
+}
+
+.carousel-dot {
+  font-size: 1.2rem;
+  color: white;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.carousel-dot.active {
+  color: #4caf50; /* Highlighted dot color */
+}
+
+.carousel-dot:hover {
+  color: #4caf50;
+}
+
+/* Right-Aligned Quote Section */
+.quote-section {
+  flex: 1;
+  max-width: 35%; /* Occupy 35% of the width */
+  background-color: #f4f7f6; /* Light greenish-gray background */
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.quote {
+  font-family: "Georgia", serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.quote-author {
+  font-family: "Arial", sans-serif;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #555;
+}

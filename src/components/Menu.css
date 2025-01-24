@@ -1,0 +1,89 @@
+/* Styling for the body */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  /* display: flex; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  height: 100vh;
+  /* border-radius: 30px; */
+  /* background-color: black; */
+
+}
+
+/* Main menu styling */
+.menu {
+  display: flex;
+  /* justify-content: space-evenly; Space between the icon and menu items */
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  padding: 20px;
+  max-width: 100%; /* Ensure the menu bar uses the full width */
+  margin: 10px auto;
+  border-bottom: 20px solid #eee;
+}
+
+/* Styling for the icon */
+.menu .menu-icon {
+  font-size: 32px;
+  color: #111;
+  margin-right: 10px;
+}
+
+/* Container for the menu items */
+.menu .menu-items {
+  display: flex;
+  justify-content: space-evenly; /* Distribute items evenly */
+  flex-grow: 1; /* Take up the remaining width */
+}
+
+/* Styling for the menu items */
+.menu .menu-item {
+  padding: 18px 28px;
+  cursor: pointer;
+  transition: color 0.3s ease-out;
+  text-decoration: none;
+  color: #111;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  font-size: 12px;
+  position: relative;
+}
+
+.menu .menu-item.active {
+  color: #fff;
+}
+
+/* Styling for the indicator */
+.menu .indicator {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  border-radius: 30px;
+  background-color: #ddd;
+  transition: all 0.3s ease-out;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 650px) {
+  .menu {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .menu .menu-icon {
+    margin-bottom: 10px; /* Adjust spacing for smaller screens */
+  }
+
+  .menu .menu-items {
+    flex-direction: column;
+    width: 100%; /* Ensure the menu items fill the width */
+  }
+
+  .menu .menu-item {
+    margin: 5px 0;
+  }
+}

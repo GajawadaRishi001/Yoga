@@ -1,0 +1,45 @@
+/* TeamSlider.css */
+.slider-container {
+    margin: 40px;
+  }
+  
+  .heading {
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  .team-card {
+    max-width: 345px;
+    margin: 0 20px;
+  }
+  
+  .team-image {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 140px;
+    height: 140px;
+    margin: 0 auto; /* Center the image */
+  }
+  
+  .name {
+    font-weight: bold;
+    color: yellow;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  
+  .title {
+    color: #555;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  .slick-dots {
+    bottom: -30px;
+  }
+  
+  .slick-prev, .slick-next {
+    z-index: 1;
+  }
+  

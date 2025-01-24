@@ -1,0 +1,98 @@
+/* Wrapper with unique background color */
+.contact-form-wrapper {
+    padding: 50px 20px;
+    background-color: #e3f2fd; /* Light blue background */
+    text-align: center;
+  }
+  
+  /* Heading */
+  .form-heading {
+    font-size: 2rem;
+    color: #1976d2; /* Theme color */
+    margin-bottom: 30px;
+  }
+  
+  /* Form Container */
+  .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap; /* Responsive layout for smaller screens */
+  }
+  
+  /* Left Section (Image) */
+  .form-image {
+    flex: 1;
+    max-width: 500px;
+  }
+  
+  .form-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Right Section (Form) */
+  .form-content {
+    flex: 1;
+    max-width: 500px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form Fields */
+  .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+  }
+  
+  .form-group label {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 8px;
+    color: #555;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  /* Submit Button */
+  .submit-btn {
+    background-color: #1976d2;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #155fa0;
+  }
+  
+  /* Submission Message */
+  .submission-message {
+    text-align: center;
+    color: #1976d2;
+  }
+  
+  .submission-message h3 {
+    font-size: 1.8rem;
+  }
+  
+  .submission-message p {
+    font-size: 1.2rem;
+  }
+  
